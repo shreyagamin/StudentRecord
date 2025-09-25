@@ -24,12 +24,19 @@
         .error {
             color: red;
         }
-        
+        .formdiv{
+            height:200px;
+            width:200px;
+            padding:10px;
+            margin:5px;
+            background-color: lightblue;
+        }
     </style>
 </head>
 
 <body>
     <h1>Student Records Management</h1>
+    <div class="formdiv">
     <form id="studentForm">
         <label for="studentId">Student ID:</label>
         <input type="text" id="studentId" required>
@@ -42,6 +49,7 @@
         <br>
         <button type="submit">Add Student</button>
     </form>
+</div>
     <h2>Student Records</h2>
     <div id="error" class="error"></div>
     <ul id="studentList"></ul>
